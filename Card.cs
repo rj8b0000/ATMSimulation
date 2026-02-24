@@ -34,6 +34,11 @@ public class Card : Transaction
                 goto EnterPinAgain;
             }
         }
+        catch (FormatException e)
+        {
+            Console.WriteLine("Please write detail in correct format. " + e.Message);
+            goto EnterPinAgain;
+        }
         catch(Exception e)
         {
             Console.WriteLine("An exemption occured: " + e);
@@ -50,17 +55,61 @@ public class Card : Transaction
         switch (choice)
         {
             case 1:
-                Console.Write("Enter the amount you want to deposit: ");
-                amount = Convert.ToInt32(Console.ReadLine());
-                Deposit(amount);
-                Thread.Sleep(500);
-                goto ContinueTransaction;
+                try
+                {
+                    Console.Write("Enter the amount you want to deposit: ");
+                    amount = Convert.ToInt32(Console.ReadLine());
+                    if (amount <= 0)
+                    {
+                        throw new ArgumentException("Value must be positive recieved");
+                        goto ContinueTransaction;
+                    }
+                    else
+                    {
+                        Deposit(amount);
+                    }
+                    Thread.Sleep(500);
+                    goto ContinueTransaction;
+                }
+                catch (FormatException e)
+                {
+                    Console.WriteLine("Please write detail in correct format. " + e.Message);
+                    goto ContinueTransaction;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("An exemption occured: " + e);
+                    goto ContinueTransaction;
+                }
+
             case 2:
-                Console.Write("Enter the amount you want to withdraw: ");
-                amount = Convert.ToInt32(Console.ReadLine());
-                Withdraw(amount);
-                Thread.Sleep(500);
-                goto ContinueTransaction;
+                try
+                {
+
+                    Console.Write("Enter the amount you want to withdraw: ");
+                    amount = Convert.ToInt32(Console.ReadLine());
+                    if (amount <= 0)
+                    {
+                        throw new ArgumentException("Value must be positive recieved");
+                        goto ContinueTransaction;
+                    }
+                    else
+                    {
+                        Withdraw(amount);
+                    }
+                    Thread.Sleep(500);
+                    goto ContinueTransaction;
+                }
+                catch (FormatException e)
+                {
+                    Console.WriteLine("Please write detail in correct format. " + e.Message);
+                    goto ContinueTransaction;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("An exemption occured: " + e);
+                    goto ContinueTransaction;
+                }
             case 3:
                 Console.WriteLine("Your current balance is: " + Balance);
                 Thread.Sleep(500);

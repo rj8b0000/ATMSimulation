@@ -5,6 +5,7 @@ namespace ATMSimulation
 {
     public class Transaction: BankAccount
     {
+        
         public double Deposit(double depositAmount)
         {
             if (depositAmount <= 0)
@@ -30,7 +31,7 @@ namespace ATMSimulation
                 Balance -= withdrawAmount;
                 Console.WriteLine("Your amount is withdrawn successfully.");
             }
-            return Balance;  
+            return Balance;   
         }
     }
 }

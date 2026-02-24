@@ -26,3 +26,4 @@
 /Users/rudrakshjani/RiderProjects/ATMSimulation/ATMSimulation/obj/Debug/net10.0/ATMSimulation.pdb
 /Users/rudrakshjani/RiderProjects/ATMSimulation/ATMSimulation/obj/Debug/net10.0/ATMSimulation.genruntimeconfig.cache
 /Users/rudrakshjani/RiderProjects/ATMSimulation/ATMSimulation/obj/Debug/net10.0/ref/ATMSimulation.dll
+/Volumes/RudrSSD/Projects/RiderProjects/ATMSimulation/ATMSimulation/obj/Debug/net10.0/ATMSimulation.sourcelink.json

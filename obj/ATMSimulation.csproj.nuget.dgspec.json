@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rudrakshjani/RiderProjects/ATMSimulation/ATMSimulation/ATMSimulation.csproj": {}
+    "/Volumes/RudrSSD/Projects/RiderProjects/ATMSimulation/ATMSimulation/ATMSimulation.csproj": {}
   },
   "projects": {
-    "/Users/rudrakshjani/RiderProjects/ATMSimulation/ATMSimulation/ATMSimulation.csproj": {
+    "/Volumes/RudrSSD/Projects/RiderProjects/ATMSimulation/ATMSimulation/ATMSimulation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rudrakshjani/RiderProjects/ATMSimulation/ATMSimulation/ATMSimulation.csproj",
+        "projectUniqueName": "/Volumes/RudrSSD/Projects/RiderProjects/ATMSimulation/ATMSimulation/ATMSimulation.csproj",
         "projectName": "ATMSimulation",
-        "projectPath": "/Users/rudrakshjani/RiderProjects/ATMSimulation/ATMSimulation/ATMSimulation.csproj",
+        "projectPath": "/Volumes/RudrSSD/Projects/RiderProjects/ATMSimulation/ATMSimulation/ATMSimulation.csproj",
         "packagesPath": "/Users/rudrakshjani/.nuget/packages/",
-        "outputPath": "/Users/rudrakshjani/RiderProjects/ATMSimulation/ATMSimulation/obj/",
+        "outputPath": "/Volumes/RudrSSD/Projects/RiderProjects/ATMSimulation/ATMSimulation/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rudrakshjani/.nuget/NuGet/NuGet.Config"
