@@ -1,10 +1,10 @@
 namespace ATMSimulation;
 
-public class Card : Transaction
+public class Card : Transaction //Inheriting Transaction Class to Use Deposit/Withraw methods. Full MultiLevel Interitance Applied
 {
     private int pin;
 
-    public int Pin
+    public int Pin //Encapsulation
     {
         get => pin;
         set => pin = value;
@@ -52,7 +52,7 @@ public class Card : Transaction
         Console.WriteLine(
             "** Enter your choice \n 1. Deposit \n 2. WithDraw \n 3. Check Current Balance \n 4. Get you Bank Account Info \n 5. Exit**");
         choice = Convert.ToInt32(Console.ReadLine());
-        switch (choice)
+        switch (choice) //conditional statetments 
         {
             case 1:
                 try

@@ -3,7 +3,7 @@
 
 namespace ATMSimulation
 {
-    public class Transaction: BankAccount
+    public class Transaction: BankAccount //This class handles Transaction Methods
     {
         
         public double Deposit(double depositAmount)
